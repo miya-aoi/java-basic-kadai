@@ -8,10 +8,7 @@ public class DictionaryExec_Chapter21 {
 		
 		String[] fruit = { "apple", "banana", "grape", "orange" };
 		
-	    for(int i=0; i<4; i++) {
-	    	dic.Dictionary();
-			dic.Search(fruit[i]);
-		}
+			dic.Search(fruit);
 	}
 
 }

@@ -5,7 +5,7 @@ public class Dictionary_Chapter21 {
 	String fruit;
 	HashMap<String,String> dictionary = new HashMap<String,String>();
 	
-	public void Dictionary(){
+	public Dictionary_Chapter21(){
 		
 	  dictionary.put("apple", "リンゴ");
 	  dictionary.put("peach","桃");
@@ -20,8 +20,11 @@ public class Dictionary_Chapter21 {
 
 	}
 	
-	public void Search(String fruit) {
-		this.fruit = fruit;
+	public void Search(String[] fruit) {
+		
+		for(int i=0; i<fruit.length; i++) {
+			
+		this.fruit = fruit[i];
 		if(dictionary.containsKey(this.fruit)) {
 			System.out.println(dictionary.get(this.fruit));	
 		}
@@ -29,6 +32,6 @@ public class Dictionary_Chapter21 {
 			System.out.println("辞書に存在しません");
 
 		}
-	
+		}
 
 	}}
